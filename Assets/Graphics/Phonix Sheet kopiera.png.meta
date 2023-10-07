@@ -42,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -76,9 +76,243 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Phonix Sheet kopiera_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3096
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42f9345e622d04e149c02d60f3dc4eb2
+      internalID: -1685859719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phonix Sheet kopiera_1
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 3096
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7731e90f613eb44639fb618367fce2b1
+      internalID: 157111700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phonix Sheet kopiera_2
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 3096
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60df571011b4742eaa9062c938978d14
+      internalID: -315828570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phonix Sheet kopiera_3
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 3096
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e308e062300cb496e9cd07b485a4545d
+      internalID: 1994393131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phonix Sheet kopiera_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2096
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da0ce59c001a64effb4fc647237464b6
+      internalID: 204098352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phonix Sheet kopiera_5
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 2096
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e4f00f91cc2942cb9d7c119ac0da3d0
+      internalID: 1201548404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phonix Sheet kopiera_6
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 2096
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 854cafeca1e04406b9687ea8d4734b62
+      internalID: 1632298528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phonix Sheet kopiera_7
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 2096
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 496f7e7783ee5491991f48bb0d9d6912
+      internalID: -1103929279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phonix Sheet kopiera_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1096
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b926c28d70ca54822acb4a884010ca09
+      internalID: -340593386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phonix Sheet kopiera_9
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1096
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d8142b44db7b49c3b685669ced7a0be
+      internalID: 75666854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -89,7 +323,21 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Phonix Sheet kopiera_3: 1994393131
+      Phonix Sheet kopiera_10: 1492326136
+      Phonix Sheet kopiera_13: -835911877
+      Phonix Sheet kopiera_4: 204098352
+      Phonix Sheet kopiera_8: -340593386
+      Phonix Sheet kopiera_2: -315828570
+      Phonix Sheet kopiera_11: 926275970
+      Phonix Sheet kopiera_1: 157111700
+      Phonix Sheet kopiera_9: 75666854
+      Phonix Sheet kopiera_7: -1103929279
+      Phonix Sheet kopiera_0: -1685859719
+      Phonix Sheet kopiera_5: 1201548404
+      Phonix Sheet kopiera_6: 1632298528
+      Phonix Sheet kopiera_12: -1075888658
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
