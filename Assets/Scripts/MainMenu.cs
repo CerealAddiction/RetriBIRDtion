@@ -5,12 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    // Start is called before the first frame update
     public void StartGame()
     {
         SceneManager.LoadScene(1);
     }
-
     public void LoadMainMenu()
     {
         SceneManager.LoadScene(0);
@@ -25,8 +23,6 @@ public class MainMenu : MonoBehaviour
     {
         Application.Quit();
     }
-
-    // Update is called once per frame
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
