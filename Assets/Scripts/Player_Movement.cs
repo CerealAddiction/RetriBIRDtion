@@ -44,7 +44,7 @@ public class Player_Movement : MonoBehaviour
         _xVal = Input.GetAxis("Horizontal");
         _yVal = Input.GetAxis("Vertical");
 
-        if (Input.GetKeyDown(KeyCode.F) && _ani.GetBool("ShootDone"))
+        if (Input.GetKeyDown(KeyCode.Space) && _ani.GetBool("ShootDone"))
         {
             _ani.SetTrigger("Shoot");
         }
