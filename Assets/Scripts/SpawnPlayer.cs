@@ -8,23 +8,14 @@ public class SpawnPlayer : MonoBehaviour
     [SerializeField] private GameObject _playerObject;
     private GameObject _curPlayer;
 
-    public bool _once = false;
-    public GameObject endScreen;
-
-    void Start()
-    {
-
-    }
-
+    //public bool _once = false;
+    //public GameObject endScreen;
 
     void Update()
     {
         if (_curPlayer == null)
         {
             SpawnNewPlayer();
-        }
-        else if (_curPlayer == null && _once)
-        {
         }
 
     }

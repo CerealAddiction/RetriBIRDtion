@@ -15,16 +15,14 @@ public class Player_Movement : MonoBehaviour
     //private float _movementSpeed = 3.0f;
     //How much force is put into movement. SerializeField= U can change shit in unity instead of here.
     [SerializeField] private float _movementForce = 10.0f;
-    //Extra movement adjustments when not grounded.
-    private float _airControl = 0.5f;
     //private float _movVal = 0.0f;
 
     private float _xVal = 0.0f;
+    private float _yVal = 0.0f;
     private Vector2 _movementVector = new Vector2();
-    //Force put into jumps. SerializeField is same thing as before.
-    [SerializeField] private float _jumpForce = 30.0f;
 
     private Animator _ani;
+    private float _mass = 100.0f;
 
     public GameObject originalBullet;
     [SerializeField] private Transform _bulletSpawn;
@@ -37,63 +35,30 @@ public class Player_Movement : MonoBehaviour
         _rb2D = GetComponent<Rigidbody2D>();
         _ani = GetComponent<Animator>();
 
-
+        _mass = _rb2D.mass;
     }
 
     // Update is called once per frame
     private void Update()
     {
         _xVal = Input.GetAxis("Horizontal");
-        //Jump stuff.
-        if (Input.GetButtonDown("Jump") && IsGrounded())
-        {
-            _ani.SetTrigger("Jump");
-            _rb2D.velocity = new Vector2(_rb2D.velocity.x, 0.0f);
-            _rb2D.AddForce(Vector2.up * _jumpForce, ForceMode2D.Impulse);
-        }
-
+        _yVal = Input.GetAxis("Vertical");
 
         if (Input.GetKeyDown(KeyCode.F) && _ani.GetBool("ShootDone"))
         {
             _ani.SetTrigger("Shoot");
         }
     }
-    //If on ground: Permit jumping. If not: No.
-    private bool IsGrounded()
-    {
-        RaycastHit2D hit = Physics2D.CircleCast(transform.position, 0.5f, Vector2.down, 0.6f);
-
-        if (hit.collider != null)
-        {
-            return true;
-        }
-
-
-        return false;
-    }
 
     private void FixedUpdate()
     {
-        if (IsGrounded())
-        {
-            _movementVector.x = _xVal * _movementForce;
+        _movementVector.x = _xVal;
+        _movementVector.y = _yVal;
 
-            if (Mathf.Abs(_xVal) > 0.1f)
-            {
-                _ani.SetBool("stop", false);
-            }
-            else
-            {
-                _ani.SetBool("stop", true);
-            }
-        }
-        else
-        {
-            _movementVector.x = _xVal * _movementForce * _airControl;
-            _ani.SetBool("stop", true);
-        }
+        _movementVector = Vector2.ClampMagnitude(_movementVector, 1.0f);
+        _movementVector *= _movementForce * _mass;
 
-        _rb2D.AddForce(_movementVector);
+        _rb2D.AddForce(_movementVector, ForceMode2D.Impulse);
 
     }
     public void ShootBullet()
