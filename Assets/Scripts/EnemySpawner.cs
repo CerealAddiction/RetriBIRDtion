@@ -12,6 +12,10 @@ public class EnemySpawner : MonoBehaviour
 
     [SerializeField] private List<WaveInfo> _waveAmount = new List<WaveInfo>();
 
+    [SerializeField] private Vector2 _minMaxSpawnX = new Vector2(0.0f, 0.0f);
+    [SerializeField] private float _spawnY = 60.0f;
+    private Vector3 _spawnRotation = new Vector3(0.0f, 0.0f, 180.0f);
+
     void Update()
     {
         _timer += Time.deltaTime;
@@ -80,7 +84,7 @@ public class EnemySpawner : MonoBehaviour
             
         }
 
-        Instantiate(go);
+        Instantiate(go, new Vector3(Random.Range(_minMaxSpawnX.x, _minMaxSpawnX.y), _spawnY, 0.0f), Quaternion.Euler(_spawnRotation));
     }
 }
 
