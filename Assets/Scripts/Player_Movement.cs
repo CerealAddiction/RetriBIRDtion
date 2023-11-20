@@ -24,7 +24,7 @@ public class Player_Movement : MonoBehaviour
     private Animator _ani;
     private float _mass = 100.0f;
 
-    public GameObject originalBullet;
+    public GameObject _bulletToSpawn;
     [SerializeField] private Transform _bulletSpawn;
     public float bulletSpeed = 10.0f;
 
@@ -63,11 +63,17 @@ public class Player_Movement : MonoBehaviour
     }
     public void ShootBullet()
     {
-        GameObject bullet = Instantiate(originalBullet, _bulletSpawn.position, _bulletSpawn.rotation);
+        if (_bulletToSpawn != null)
+        {
+            GameObject go = Instantiate(_bulletToSpawn, _bulletSpawn.position, _bulletSpawn.rotation);
+            go.GetComponent<Rigidbody2D>().velocity = Vector2.up * bulletSpeed;
 
-        bullet.GetComponent<Rigidbody2D>().velocity = Vector2.right * bulletSpeed;
-
-        Destroy(bullet, 5.0f);
+            Destroy(go, 5.0f);
+        }
+        else
+        {
+            Debug.LogError("You didn't put a bullet in the script, nerd");
+        }
     }
 
 }

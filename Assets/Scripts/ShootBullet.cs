@@ -2,14 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ShootingBullet : MonoBehaviour
+public class ShootBullet : MonoBehaviour
 {
-    // Update is called once per frame
+    [SerializeField] private GameObject _bulletToSpawn;
+    [SerializeField] private float _bulletSpeed = 3.0f;
+    [SerializeField] private Vector2 _bulletTimer = new Vector2(0.0f, 1.0f);
+
+
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
+        
+    }
 
-        }
+    private void SpawnBullet()
+    {
+        
     }
 }
