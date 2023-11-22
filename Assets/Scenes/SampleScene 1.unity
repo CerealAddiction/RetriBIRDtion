@@ -163,8 +163,6 @@ MonoBehaviour:
   - amountToSpawn: 10
     enemyToSpawn: {fileID: 0}
     percentageChanceToSpawnSpecial: 1
-  _minMaxSpawnX: {x: -5, y: 5}
-  _spawnY: 60
 --- !u!4 &125131564
 Transform:
   m_ObjectHideFlags: 0
