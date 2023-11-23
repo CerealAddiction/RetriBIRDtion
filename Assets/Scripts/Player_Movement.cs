@@ -75,5 +75,9 @@ public class Player_Movement : MonoBehaviour
             Debug.LogError("You didn't put a bullet in the script, nerd");
         }
     }
+    public void Death()
+    {
+
+    }
 
 }

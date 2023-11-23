@@ -18,7 +18,7 @@ public class DeathCollision : MonoBehaviour
 
             if (Enemy)
             {
-                collision.gameObject.GetComponent<Player_Movement>().Death(0);
+                collision.gameObject.GetComponent<Player_Movement>().Death();
            
             }
         }
