@@ -75,6 +75,7 @@ public class Player_Movement : MonoBehaviour
             Debug.LogError("You didn't put a bullet in the script, nerd");
         }
     }
+<<<<<<< HEAD
     public void Death(int cause)
     {
         GameObject.FindGameObjectWithTag("Enemy").GetComponent<Enemy>().PlayerDead();
@@ -87,4 +88,10 @@ public class Player_Movement : MonoBehaviour
         }
     }
 }
+=======
+    public void Death()
+    {
+
+    }
+>>>>>>> 793f3d61ec863527d1245bd0b5843c7e566e0766
 
