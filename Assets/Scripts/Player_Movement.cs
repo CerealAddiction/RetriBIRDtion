@@ -75,5 +75,16 @@ public class Player_Movement : MonoBehaviour
             Debug.LogError("You didn't put a bullet in the script, nerd");
         }
     }
+    public void Death(int cause)
+    {
+        GameObject.FindGameObjectWithTag("Enemy").GetComponent<Enemy>().PlayerDead();
 
+        if (!_isDead) //bool
+        {
+            _isDead = true;
+            _ani.SetTrigger("Death");
+            _ani.SetInteger("DeathReason", cause);
+        }
+    }
 }
+
