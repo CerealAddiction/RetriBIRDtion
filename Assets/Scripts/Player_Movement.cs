@@ -78,4 +78,9 @@ public class Player_Movement : MonoBehaviour
 
     }
 
+    public void Death()
+    {
+        Destroy(gameObject);
+    }
+
 }
