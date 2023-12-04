@@ -192,4 +192,4 @@ MonoBehaviour:
   _movementForce: 10
   _bulletToSpawn: {fileID: 1717749067499738714, guid: a9d2e2ede8fbd44959b5d6e822394e32, type: 3}
   _bulletSpawn: {fileID: 339417822761682476}
-  bulletSpeed: 10
+  bulletSpeed: 55
