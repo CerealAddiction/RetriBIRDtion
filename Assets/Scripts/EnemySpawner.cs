@@ -94,4 +94,6 @@ public class WaveInfo
     public int amountToSpawn;
     public GameObject enemyToSpawn;
     public float percentageChanceToSpawnSpecial = 1;
+
+
 }

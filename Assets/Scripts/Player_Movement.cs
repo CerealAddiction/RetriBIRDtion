@@ -77,15 +77,9 @@ public class Player_Movement : MonoBehaviour
 
 
     }
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.gameObject.CompareTag("Enemy"))
-        {
-            Destroy(other.gameObject);
-        }
 
-    }
-        public void Death()
+
+    public void Death()
     {
         Destroy(gameObject);
     }
