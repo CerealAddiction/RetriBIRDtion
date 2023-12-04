@@ -207,9 +207,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1105984007}
-        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
-        m_MethodName: set_enabled
-        m_Mode: 6
+        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+        m_MethodName: LoadMainMenu
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -496,9 +496,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1105984006}
   - component: {fileID: 1105984005}
-  - component: {fileID: 1105984007}
   - component: {fileID: 1105984004}
   - component: {fileID: 1105984003}
+  - component: {fileID: 1105984007}
   m_Layer: 5
   m_Name: Death
   m_TagString: Untagged
@@ -597,7 +597,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1105984002}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c9addafdccb3408e9c7cba48fba8b55, type: 3}
+  m_Script: {fileID: 11500000, guid: 8c43a1dee7810456397a46b1b2210bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1286372684
