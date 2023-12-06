@@ -9,6 +9,7 @@ public class CollisionDetector : MonoBehaviour
     void OnCollisionEnter(Collision col)
     {
         if (col.gameObject.tag == "Death")
+          
         {
             SceneManager.LoadScene(2);
         }
