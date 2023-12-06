@@ -13,7 +13,7 @@ public class ScrollingBackground : MonoBehaviour
     void Update()
 
     {
-        bgRenderer.material.mainTextureOffset += new Vector2(0, speed * Time.deltaTime);
+        bgRenderer.material.mainTextureOffset += new Vector2(0, speed * Time.deltaTime); 
 
     }
 
