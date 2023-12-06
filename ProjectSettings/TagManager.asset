@@ -7,6 +7,7 @@ TagManager:
   - Enemy
   - defaultEnemy
   - BackGround
+  - Nest
   layers:
   - Default
   - TransparentFX
