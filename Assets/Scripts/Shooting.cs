@@ -16,6 +16,7 @@ public class Shooting : StateMachineBehaviour
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         if (stateInfo.normalizedTime > 0.6f && !_once)
+            //changing this doesnt fix fire rate
         {
             _once = !_once;
             animator.gameObject.GetComponent<Player_Movement>().ShootBullet();
