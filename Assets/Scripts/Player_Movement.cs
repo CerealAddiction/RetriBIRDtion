@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 
 [RequireComponent(typeof(CapsuleCollider2D))]
@@ -80,8 +81,8 @@ public class Player_Movement : MonoBehaviour
 
     public void Death()
     {
-        Destroy(gameObject);
-        //SceneManager.LoadScene(2);??????
+        //Destroy(gameObject);
+        SceneManager.LoadScene(2); //?????? (l?gg int tillbaka denna, men l?gg tillbaka allt annat)
     }
 
 

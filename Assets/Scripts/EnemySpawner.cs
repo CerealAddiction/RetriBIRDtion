@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
 {
-    private float _phaseIncrements = 5.0f;
+   [SerializeField] private float _phaseIncrements = 5.0f;
     private float _timer = 0.0f;
     private int _phase = 0;
 
@@ -35,19 +35,25 @@ public class EnemySpawner : MonoBehaviour
             case 1:
                 if (_timer >= _phaseIncrements)
                 {
-                    //spawn second set of enemies
+                    for (int i = 0; i < _waveAmount[_phase].amountToSpawn; i++)
+                    {
+                        SpawnEnemy();
+                    }
                     _phase = 2;
                 }
                 break;
             case 2:
-                if (_timer <= _phaseIncrements * 2)
+                if (_timer >= _phaseIncrements * 2)
                 {
-                    //spawn second set of enemies
+                    for (int i = 0; i < _waveAmount[_phase].amountToSpawn; i++)
+                    {
+                        SpawnEnemy();
+                    }
                     _phase = 3;
                 }
                 break;
             case 3:
-                if (_timer <= _phaseIncrements * 3)
+                if (_timer >= _phaseIncrements * 3)
                 {
                     ResetPhases();
                 }
@@ -84,7 +90,9 @@ public class EnemySpawner : MonoBehaviour
             
         }
 
-        Instantiate(go, new Vector3(Random.Range(_minMaxSpawnX.x, _minMaxSpawnX.y), Random.Range(_minMaxSpawnY.x, _minMaxSpawnY.y), 0.0f), Quaternion.Euler(_spawnRotation));
+        GameObject temp = Instantiate(go, new Vector3(Random.Range(_minMaxSpawnX.x, _minMaxSpawnX.y), Random.Range(_minMaxSpawnY.x, _minMaxSpawnY.y), 0.0f), Quaternion.Euler(_spawnRotation));
+
+        Destroy(temp, 15.0f);
     }
 }
 
