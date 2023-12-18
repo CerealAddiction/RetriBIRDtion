@@ -25,7 +25,7 @@ public class GameOver : MonoBehaviour
         {
             _health--;
 
-            if(_health >= 0)
+            if(_health <= 0)
             {
                 GameObject.FindGameObjectWithTag("Player").GetComponent<Player_Movement>().Death();
             }
