@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy : MonoBehaviour
+public class Enemy : MonoBehaviour  
 {
     private Rigidbody2D _rb2D;
     private float _movementSpeed = 30.0f;
